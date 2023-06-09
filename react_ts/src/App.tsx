@@ -1,14 +1,14 @@
 import './App.css';
-import Post from './components/Post';
-
-
-
+import ButtonStyle from './components/ButtonStyle';
+const btnStyle = {
+  backgroundColor:"green",
+  padding:"0.5rem"
+}
 function App() {
   return (
     <div className="App">
-      <h1>User Management</h1>
-      {/* <Button>Click me</Button> */}
-      <Post/>
+      <h1>Style Props</h1>
+      <ButtonStyle btnStyle = {btnStyle}/>
     </div>
   );
 }
