@@ -1,12 +1,14 @@
 import './App.css';
-import DataFetch from './components/DataFetch';
+import Post from './components/Post';
+
+
 
 function App() {
   return (
     <div className="App">
       <h1>User Management</h1>
-      <DataFetch status="loading"/>
-      
+      {/* <Button>Click me</Button> */}
+      <Post/>
     </div>
   );
 }
