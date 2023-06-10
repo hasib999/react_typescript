@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState,MouseEvent,ChangeEvent } from 'react'
 
 const NewUser = () => {
     const [userName, setUserName] = useState("")
-    const handleUserNameChange = (event:React.ChangeEvent<HTMLInputElement>) => {
+    const handleUserNameChange = (event:ChangeEvent<HTMLInputElement>) => {
         setUserName(event.target.value)
     }
-    const handleShowName = (event:React.MouseEvent<HTMLButtonElement>) =>{
+    const handleShowName = (event:MouseEvent<HTMLButtonElement>) =>{
         console.log(userName)
     }
   return (
